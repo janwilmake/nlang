@@ -1,6 +1,6 @@
 # ExtExe - The AI Compilation Layer for Natural Language Programming
 
-We can call this ExtExe: short for 'Extension Execution'. ExtExe.com is available.
+We can call this ExtExe: short for 'Extension Execution'. ExtExe.com is bought.
 
 Description: extexe is an AI Layer capable of tranforming hierarchical files into AI-generated static assets and scripts.
 
@@ -42,6 +42,10 @@ The output is to be used in a way where we:
 - add lazily generated files from r2
 - bundle to a worker executable
 - (re)deploy.
+
+The full high-level flow looks like this:
+
+![](private/flow.drawio.svg)
 
 TODO:
 

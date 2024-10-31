@@ -1,0 +1,3 @@
+name = "codefromanywhere_extexe_main"
+compatibility_date = "2024-10-11"
+assets = { directory= "./" }
