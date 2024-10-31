@@ -1,4 +1,4 @@
-# AI Layer
+# ExtExe - The AI Compilation Layer for Natural Language Programming
 
 We can call this ExtExe: short for 'Extension Execution'. ExtExe.com is available.
 
