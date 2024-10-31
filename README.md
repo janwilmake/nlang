@@ -52,3 +52,11 @@ TODO:
 - Start with iRFC cloud and extract as much as we can use. See `syncBranch`, `irfc-admin/deploy`, `set` for the main blocks
 - Extrahere the compare functionality to uithub as it's generally useful
 - Create a initial version of this URL-to-URL workflow
+
+# Ultimate goal
+
+Unless .ext.md is detected without .ext counterpart or unless it’s react etc, then show message.
+
+After this: AI layer! README to API + Site @ custom domain.
+
+https://github.com/CodeFromAnywhere/calculator + https://github.com/codefromanywhere/microflare-template = API + Website with 100% Reliability
