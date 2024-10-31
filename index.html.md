@@ -2,6 +2,8 @@
 
 # 1
 
+See `README.md`
+
 please think step by step and come up with how I shall present this to the world using a landing page. act like you're the best copywriting expert in the world and come up with a full landingapge copy (don't make a website yet)
 
 # 2
