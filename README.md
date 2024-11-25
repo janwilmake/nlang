@@ -43,14 +43,9 @@ The output is to be used in a way where we:
 - bundle to a worker executable
 - (re)deploy.
 
-The full high-level flow looks like this:
-
-![](private/flow.drawio.svg)
-
 TODO:
 
 - ✅ Start with iRFC cloud and extract as much as we can use. See `syncBranch`, `irfc-admin/deploy`, `set` for the main blocks
-- Create uithub GET `/compare` API. Extrahere the compare functionality from iRFC-cloud to uithub as it's generally useful
-- Create uithub POST `push/owner/repo/branch({fileObject,isPartial:boolean})` to easily push a commit to a branch, including partial updates. 🤔 Even though this creates entirely generated code on github and may be messy, if we have to choose between using github or making our own, github is likely better since it's much more easy to observe things and it's free anyway. Later we can add our own storage solution if this isn't desired in certain cases.
-- Use the above endpoints to create the main `extexe` GET endpoint that streams results until done, or immediately pushes everything from a URL if it's already there (no changes). Finish an initial version of this URL-to-URL workflow
+- 🟠 implement uithub compare, push, issues, discussions, pulls, and PR creation.
+- Use new uithub functionality to create the main `extexe` GET endpoint that streams results until done, or immediately pushes everything from a URL if it's already there (no changes). Finish an initial version of this URL-to-URL workflow
 - https://github.com/CodeFromAnywhere/calculator + https://github.com/codefromanywhere/microflare-template = API + Website with 100% Reliability
