@@ -1,4 +1,3 @@
-import { notEmpty, OpenapiDocument } from "edge-util";
 import { fetchRepoDetails } from "./fetchRepoDetails.js";
 import { getIsAsset } from "./getIsAsset.js";
 import { apexDomain } from "./constants.js";
