@@ -1,5 +1,7 @@
 # ExtExe - The AI Compilation Layer for Natural Language Programming
 
+> Archived - Moved to [nlang](https://nlang.dev)
+
 We can call this ExtExe: short for 'Extension Execution'. ExtExe.com is bought.
 
 Description: extexe is an AI Layer capable of tranforming hierarchical files into AI-generated static assets and scripts.
@@ -50,8 +52,4 @@ TODO:
 - ✅ Created a new OpenAPI that follows the filetransformers standard
 - ✅ Created fileoverlay.com so we don't need to add that into extexe anymore.
 - 🟠 Implement chatcompletions.com so we have graceful cached chatcompletions
-- ❗️ Implement extexe without intermediate storages that resolves a file object to a new file object + diff.
-- As a new standard, require API dependencies to be denoted as `domain/operationId` e.g. `chatcompletions.com/transform`, assuming the openapi can be found at `openapi.json`. It's much better than relying on something like openapisearch. We can also allow functions without operationId by doing `domain/path/to/thing__method` such as `chatcompletions.com/transform__get`. We can also allow for multiple with `,` separation after the `/`.
-- Use new uithub functionality to create the main `extexe` GET endpoint that streams results until done, or immediately pushes everything from a URL if it's already there (no changes). Finish an initial version of this URL-to-URL workflow
-- ✅ https://github.com/CodeFromAnywhere/calculator + https://github.com/codefromanywhere/microflare-template = https://fileoverlay.com/overlay/codefromanywhere/microflare-template/codefromanywhere/calculator?apiKey=xxx
-- `GET /transform (fileOject=https://fileoverlay.com/overlay/codefromanywhere/microflare-template/codefromanywhere/calculator?apiKey=xxx)` is a functional API + Website (most likely). Now add cloudflare deployment github action as additional template and see if I can watch the deployment action on githubwatch. Failed deployment should become an issue that could resolve into a PR, ultimately giving us a code generator with 100% Reliability
+- 🟠 Implement extexe without intermediate storages that resolves a file object to a new file object + diff
