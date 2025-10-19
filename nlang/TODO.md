@@ -23,3 +23,5 @@ The main goal is for this to become more open and more enterprise-ready. In the 
 There are many layers to this and it's a challenge creating a unified chat completions thing that works for any chat completions endpoint, nicely layering modular pieces on top of it for different runtimes. Yet, this should be the goal!
 
 ![](layers.drawio.png)
+
+Using standard github CI stuff, we can do this each time we push, saving slow generation time: https://letmeprompt.com/rules-httpsuithu-anfpnk0
