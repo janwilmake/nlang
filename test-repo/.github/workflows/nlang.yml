@@ -58,11 +58,10 @@ jobs:
         run: |
           if [ -n "${{ github.event.inputs.file }}" ]; then
             npx nlang build --file "${{ github.event.inputs.file }}"
-          if [ "${{ github.event.schedule }}" = "0 */12 * * *" ]; then
+          elif [ "${{ github.event.schedule }}" = "0 */12 * * *" ]; then
             npx nlang build --file "feed.xml.md"
-          elif [ ${{ github.event.schedule }}" = "0 8 * * 1" ]; then
+          elif [ "${{ github.event.schedule }}" = "0 8 * * 1" ]; then
             npx nlang build --file "news/digest.html.md"
-          fi
           else
             npx nlang build
           fi

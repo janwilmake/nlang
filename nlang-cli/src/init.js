@@ -73,10 +73,7 @@ function generateWorkflow(cronMap, files) {
   // For cron, we determine which files to build based on the schedule
   const cronDispatchLogic = cronEntries
     .map(([cron, paths], i) => {
-      const condition =
-        i === 0
-          ? `if [ "\${{ github.event.schedule }}" = "${cron}" ]; then`
-          : `elif [ \${{ github.event.schedule }}" = "${cron}" ]; then`;
+      const condition = `elif [ "\${{ github.event.schedule }}" = "${cron}" ]; then`;
       // Build each file individually via --file flag
       const buildCmds = paths
         .map((p) => `            npx nlang build --file "${p}"`)
@@ -143,7 +140,7 @@ ${hasTsFiles ? `      - name: Install tsx (for TypeScript support)\n        run:
         run: |
           if [ -n "\${{ github.event.inputs.file }}" ]; then
             npx nlang build --file "\${{ github.event.inputs.file }}"
-${cronDispatchLogic ? `${cronDispatchLogic}\n          fi` : "          else\n            npx nlang build\n          fi"}${!cronDispatchLogic ? "" : `\n          else\n            npx nlang build\n          fi`}
+${cronDispatchLogic ? `${cronDispatchLogic}\n          else\n            npx nlang build\n          fi` : "          else\n            npx nlang build\n          fi"}
 
       - name: Commit and push output
         run: |
