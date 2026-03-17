@@ -76,7 +76,7 @@ function generateWorkflow(cronMap, files) {
       const condition = `elif [ "\${{ github.event.schedule }}" = "${cron}" ]; then`;
       // Build each file individually via --file flag
       const buildCmds = paths
-        .map((p) => `            npx nlang build --file "${p}"`)
+        .map((p) => `            nlang build --file "${p}"`)
         .join("\n");
       return `          ${condition}\n${buildCmds}`;
     })
@@ -122,7 +122,7 @@ jobs:
           node-version: '22'
 
       - name: Install nlang
-        run: npm install -g nlang
+        run: npm install -g nlang-cli
 
 ${hasTsFiles ? `      - name: Install tsx (for TypeScript support)\n        run: npm install -g tsx\n` : ""}
       - name: Restore cache
@@ -139,8 +139,8 @@ ${hasTsFiles ? `      - name: Install tsx (for TypeScript support)\n        run:
           LLM_API_KEY: \${{ secrets.LLM_API_KEY }}
         run: |
           if [ -n "\${{ github.event.inputs.file }}" ]; then
-            npx nlang build --file "\${{ github.event.inputs.file }}"
-${cronDispatchLogic ? `${cronDispatchLogic}\n          else\n            npx nlang build\n          fi` : "          else\n            npx nlang build\n          fi"}
+            nlang build --file "\${{ github.event.inputs.file }}"
+${cronDispatchLogic ? `${cronDispatchLogic}\n          else\n            nlang build\n          fi` : "          else\n            nlang build\n          fi"}
 
       - name: Commit and push output
         run: |

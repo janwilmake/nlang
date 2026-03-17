@@ -1,6 +1,6 @@
 {
   "name": "nlang-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Executable Extensions - Build system for double-extension files",
   "type": "module",
   "bin": {
