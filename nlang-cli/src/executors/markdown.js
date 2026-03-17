@@ -80,8 +80,9 @@ export async function executeMarkdown({
       { role: "system", content: systemPrompt },
       { role: "user", content: prompt }
     ],
-    temperature: frontmatter.temperature ?? config.temperature ?? 0,
-    max_tokens: frontmatter.max_tokens ?? config.max_tokens ?? 4096
+    temperature: frontmatter.temperature ?? config.temperature ?? undefined,
+    max_completion_tokens:
+      frontmatter.max_tokens ?? config.max_tokens ?? undefined
   });
 
   const result = response.choices[0]?.message?.content || "";

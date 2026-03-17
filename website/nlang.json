@@ -1,0 +1,4 @@
+{
+  "model": "gpt-5.4-2026-03-05",
+  "system": "You are an expert web developer. Output ONLY the complete HTML file. No explanations, no markdown fences."
+}

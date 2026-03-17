@@ -1,0 +1,14 @@
+{
+  "name": "nlang-dev",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "npx nlang-cli build",
+    "dev": "wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^3.99.0",
+    "nlang-cli": "^0.1.2"
+  }
+}
