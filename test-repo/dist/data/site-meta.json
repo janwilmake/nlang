@@ -1,0 +1,11 @@
+{
+  "name": "Alex Developer",
+  "title": "Portfolio",
+  "description": "Building the future, one commit at a time",
+  "buildTime": "2026-03-17T12:16:37.085Z",
+  "version": "1.0.0",
+  "links": {
+    "github": "https://github.com/alexdev",
+    "twitter": "https://twitter.com/alexdev"
+  }
+}

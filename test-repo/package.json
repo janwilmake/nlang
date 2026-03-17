@@ -1,0 +1,11 @@
+{
+  "name": "extexe-test-repo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Test repo for extexe CLI",
+  "scripts": {
+    "build": "extexe build",
+    "init": "extexe init",
+    "dry-run": "extexe build --dry-run"
+  }
+}

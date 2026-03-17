@@ -1,0 +1,22 @@
+{
+  "name": "nlang-cli",
+  "version": "0.1.0",
+  "description": "Executable Extensions - Build system for double-extension files",
+  "type": "module",
+  "bin": {
+    "nlang": "./bin/nlang.js"
+  },
+  "scripts": {
+    "build": "node src/build.js",
+    "init": "node bin/nlang.js init",
+    "test": "node --test src/__tests__/"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "glob": "^10.3.10",
+    "openai": "^4.73.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
