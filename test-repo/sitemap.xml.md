@@ -1,8 +1,9 @@
 ---
-model: gpt-4o-mini
+model: gpt-5.4-2026-03-05
 temperature: 0
 cacheTtl: -1
 ---
+
 Generate a sitemap.xml for a website at https://alexdev.example.com with these pages:
 
 - / (index.html) - priority 1.0, daily changefreq

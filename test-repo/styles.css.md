@@ -1,11 +1,13 @@
 ---
-model: gpt-4o-mini
+model: gpt-5.4-2026-03-05
 ---
+
 Generate a utility CSS file that complements this HTML page:
 
 @{index.html}
 
 Add:
+
 - A smooth scroll behavior
 - Hover effects for links (color: #58a6ff)
 - A subtle fade-in animation for sections

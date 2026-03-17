@@ -58,7 +58,7 @@ Add an `nlang.json` to your project root (or any subdirectory — more specific 
 
 ```json
 {
-  "model": "gpt-4o-mini",
+  "model": "gpt-5.4-2026-03-05",
   "out": "dist"
 }
 ```

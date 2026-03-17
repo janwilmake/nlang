@@ -1,5 +1,5 @@
 ---
-model: gpt-4o-mini
+model: gpt-5.4-2026-03-05
 ---
 
 Create a minimal single-page portfolio website with:

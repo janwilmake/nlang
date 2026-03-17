@@ -48,7 +48,7 @@ export async function executeMarkdown({
   }
 
   // Determine model and API settings
-  const model = frontmatter.model || config.model || "gpt-4o-mini";
+  const model = frontmatter.model || config.model || "gpt-5.4-2026-03-05";
   const baseURL = frontmatter.baseURL || config.baseURL || undefined;
   const apiKey =
     frontmatter.apiKey ||

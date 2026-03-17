@@ -1,5 +1,5 @@
 {
-  "model": "gpt-4o-mini",
+  "model": "gpt-5.4-2026-03-05",
   "temperature": 0,
   "cacheTtl": 3600,
   "system": "You are a build tool. Output ONLY the requested file content, no explanations, no markdown code fences."

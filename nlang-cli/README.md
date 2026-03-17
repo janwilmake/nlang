@@ -15,7 +15,7 @@ npm install -g nlang
 ```markdown
 ## <!-- index.html.md -->
 
-## model: gpt-4o-mini
+## model: gpt-5.4-2026-03-05
 
 Create a simple landing page for a developer portfolio.
 Include a hero section, about section, and contact form.
@@ -198,7 +198,7 @@ nlang build -d /path/to/project
 
 ```
 my-site/
-├── nlang.json              # {"model": "gpt-4o-mini"}
+├── nlang.json              # {"model": "gpt-5.4-2026-03-05"}
 ├── index.html.md            # Landing page prompt
 ├── styles.css.md            # CSS prompt (references index.html.md output)
 ├── blog/

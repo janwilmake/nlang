@@ -1,7 +1,8 @@
 ---
-model: gpt-4o-mini
+model: gpt-5.4-2026-03-05
 temperature: 0
 ---
+
 Merge these two JSON data sources into a single JSON object with keys "meta", "skills", and "stats":
 
 Site metadata:

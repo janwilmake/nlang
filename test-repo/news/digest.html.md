@@ -1,12 +1,14 @@
 ---
-model: gpt-4o-mini
+model: gpt-5.4-2026-03-05
 trigger: "0 8 * * 1"
 temperature: 0.8
 cacheTtl: 0
 ---
-Generate a weekly developer news digest HTML page. Pick 5 fictional but plausible tech news items for the week of January 13, 2025. 
+
+Generate a weekly developer news digest HTML page. Pick 5 fictional but plausible tech news items for the week of January 13, 2025.
 
 Each item should have:
+
 - A headline
 - A 2-sentence summary
 - A fictional source

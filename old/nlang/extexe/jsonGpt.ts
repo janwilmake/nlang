@@ -6,9 +6,9 @@ export const jsonGpt = async <T>(
   agentOpenapiUrl: string | undefined,
   system: string,
   user: string,
-  model = "gpt-4o-mini",
+  model = "gpt-5.4-2026-03-05",
   llmBasepath = "https://api.openai.com/v1",
-  llmApiKey = process.env.OPENAI_API_KEY,
+  llmApiKey = process.env.OPENAI_API_KEY
 ): Promise<{
   status: number;
   codeblockJson?: T | null;
@@ -22,7 +22,7 @@ export const jsonGpt = async <T>(
 
   const messages = [
     { role: "system", content: system },
-    { role: "user", content: user },
+    { role: "user", content: user }
   ];
 
   const openapiPart = agentOpenapiUrl
@@ -35,14 +35,14 @@ export const jsonGpt = async <T>(
       body: JSON.stringify({
         stream: true,
         model,
-        messages,
+        messages
       }),
       method: "POST",
       headers: {
         "X-BASEPATH": llmBasepath,
-        Authorization: `Bearer ${llmApiKey}`,
-      },
-    },
+        Authorization: `Bearer ${llmApiKey}`
+      }
+    }
   );
 
   if (!llmResult.ok) {
@@ -85,7 +85,7 @@ export const jsonGpt = async <T>(
   if (!currentResponse) {
     return {
       status: 422,
-      statusText: "Got repsonse but no content",
+      statusText: "Got repsonse but no content"
     };
   }
 
